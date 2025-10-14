@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abishake - Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Futuristic Loading Screen -->
+    <div id="loading-screen">
+        <!-- Stage 1: Glitching Text -->
+        <div class="loading-stage" id="stage-1">
+            <div class="glitch-container">
+                <div class="glitch-text" data-text="INITIALIZING_SYSTEM...">INITIALIZING_SYSTEM...</div>
+                <div class="glitch-text glitch-text-2" data-text="DATA_SCIENTIST_PORTFOLIO">DATA_SCIENTIST_PORTFOLIO</div>
+            </div>
+        </div>
+        
+        <!-- Stage 2: Wireframe Hexagon -->
+        <div class="loading-stage" id="stage-2">
+            <div class="wireframe-container">
+                <svg class="wireframe-hexagon" viewBox="0 0 400 400">
+                    <defs>
+                        <linearGradient id="wireGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#ff0080;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#39ff14;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <polygon class="hexagon-outline" points="200,60 280,120 280,240 200,300 120,240 120,120" />
+                    <g class="hexagon-lines">
+                        <line x1="200" y1="60" x2="200" y2="300" />
+                        <line x1="120" y1="120" x2="280" y2="240" />
+                        <line x1="120" y1="240" x2="280" y2="120" />
+                        <line x1="150" y1="180" x2="250" y2="180" />
+                        <line x1="170" y1="150" x2="230" y2="210" />
+                        <circle cx="200" cy="180" r="25" />
+                        <circle cx="200" cy="180" r="45" fill="none" />
+                    </g>
+                </svg>
+                <div class="scanning-lines"></div>
+            </div>
+        </div>
+        
+        <!-- Stage 3: 3D Crystalline Prism -->
+        <div class="loading-stage" id="stage-3">
+            <div class="prism-container">
+                <div class="prism">
+                    <div class="face face-1"></div>
+                    <div class="face face-2"></div>
+                    <div class="face face-3"></div>
+                    <div class="face face-4"></div>
+                    <div class="face face-5"></div>
+                    <div class="face face-6"></div>
+                </div>
+                <div class="light-rays">
+                    <div class="ray ray-1"></div>
+                    <div class="ray ray-2"></div>
+                    <div class="ray ray-3"></div>
+                    <div class="ray ray-4"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Stage 4: Final Reveal -->
+        <div class="loading-stage" id="stage-4">
+            <div class="digital-grid"></div>
+            <div class="final-prism"></div>
+            <div class="name-reveal">
+                <h1 class="portfolio-title">
+                    <span class="letter">A</span>
+                    <span class="letter">B</span>
+                    <span class="letter">I</span>
+                    <span class="letter">S</span>
+                    <span class="letter">H</span>
+                    <span class="letter">A</span>
+                    <span class="letter">K</span>
+                    <span class="letter">E</span>
+                </h1>
+                <div class="subtitle-reveal">DATA SCIENTIST PORTFOLIO</div>
+                <div class="loading-complete">
+                    <div class="complete-text">SYSTEM INITIALIZED</div>
+                    <div class="access-granted">ACCESS GRANTED</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Loading Progress Indicator -->
+        <div class="futuristic-progress">
+            <div class="progress-container">
+                <div class="progress-line"></div>
+                <div class="progress-text">
+                    <span class="progress-percent">0%</span>
+                    <span class="progress-label">LOADING...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="background-effects">
+        <div class="floating-shapes"></div>
+        <div class="floating-shapes"></div>
+        <div class="floating-shapes"></div>
+        <div class="floating-shapes"></div>
+        <div class="gradient-orb"></div>
+        <div class="gradient-orb"></div>
+        <div class="gradient-orb"></div>
+    </div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Abishake</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#achievements" class="nav-link">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="nav-link">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="typing-text">Hi, I'm Abishake 👋</span>
+                    </h1>
+                    <h2 class="hero-subtitle neon-text">🤖 Expert Data Scientist & ML Engineer 📊</h2>
+                    <h3 style="color: var(--neon-green); font-size: 1.2rem; margin-bottom: 15px; text-shadow: 0 0 10px var(--neon-green);">
+                        💻 Full-Stack Web Developer | 🎓 CS Engineering Student
+                    </h3>
+                    <p class="hero-description">
+                        Computer Science Engineering Student passionate about transforming data into actionable insights 📊
+                        and building innovative web solutions 💻. Combining analytical thinking with creative problem-solving 🧠⚡
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="assets/images/profile.jpg" alt="Abishake Profile" class="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>🤖 Expert Data Scientist & Machine Learning Engineer 📊</h3>
+                    <p>
+                        I'm a passionate <strong>Data Scientist</strong> and Computer Science Engineering student specializing in 
+                        <strong>Machine Learning, Statistical Analysis, and Predictive Modeling</strong>. My expertise lies in 
+                        transforming complex datasets into actionable business insights using Python, R, and advanced ML algorithms.
+                    </p>
+                    <p>
+                        As a <strong>Data Science professional</strong>, I've mastered technologies like TensorFlow, Scikit-learn, 
+                        Pandas, and NumPy. I also excel in web development, creating data-driven applications that bridge the gap 
+                        between complex analytics and user-friendly interfaces.
+                    </p>
+                    <p>
+                        With <strong>5+ Data Science certifications</strong> and hands-on experience in real-world projects, 
+                        I combine technical expertise with leadership skills to deliver impactful solutions in the rapidly 
+                        evolving field of artificial intelligence and data analytics.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>20+</h4>
+                            <p>📊 Data Science Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>8+</h4>
+                            <p>🏅 ML/DS Certificates</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>15+</h4>
+                            <p>💻 Web Dev Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>95.2%</h4>
+                            <p>🎓 Academic CGPA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/about-me.jpg" alt="About Abishake">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Data Science & Analytics</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Machine Learning</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>R Programming</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SQL</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML/CSS</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Languages I Speak 🌍</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>🇮🇳 Tamil</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="100%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>🇺🇸 English</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>🇮🇳 Hindi</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>🇯🇵 Japanese</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience 💼</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>🤖 Data Science Intern</h3>
+                        <h4>Tech Solutions Ltd.</h4>
+                        <p>Developing machine learning models for predictive analytics, working with large datasets using Python, pandas, and scikit-learn. Implemented recommendation systems and automated data processing pipelines.</p>
+                        <div class="experience-skills">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>TensorFlow</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>💻 Freelance Web Developer</h3>
+                        <h4>Multiple Clients</h4>
+                        <p>Built responsive websites and web applications for 15+ clients. Specialized in creating data visualization dashboards and portfolio websites using modern web technologies.</p>
+                        <div class="experience-skills">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>JavaScript</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2023</div>
+                    <div class="timeline-content">
+                        <h3>👑 Student Council President</h3>
+                        <h4>University College</h4>
+                        <p>Led a team of 25+ student representatives, organized technical events and workshops. Managed budget allocation and coordinated with faculty for academic improvements.</p>
+                        <div class="experience-skills">
+                            <span>Leadership</span>
+                            <span>Event Management</span>
+                            <span>Public Speaking</span>
+                            <span>Team Building</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>🔬 Research Assistant</h3>
+                        <h4>AI Research Lab</h4>
+                        <p>Assisted in machine learning research projects, data collection and analysis. Published research paper on "Predictive Models in Healthcare" in IEEE conference proceedings.</p>
+                        <div class="experience-skills">
+                            <span>Research</span>
+                            <span>Data Analysis</span>
+                            <span>Academic Writing</span>
+                            <span>Statistical Methods</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card glow-border">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Dean's List 🏆</h3>
+                    <p>Computer Science Engineering</p>
+                    <span class="achievement-year">2023-2024</span>
+                </div>
+                <div class="achievement-card glow-border">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Best ML Project Award 🥇</h3>
+                    <p>Machine Learning Competition</p>
+                    <span class="achievement-year">2024</span>
+                </div>
+                <div class="achievement-card glow-border">
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Academic Excellence ⭐</h3>
+                    <p>Top 5% in Class - 95.2% CGPA</p>
+                    <span class="achievement-year">2023</span>
+                </div>
+                <div class="achievement-card glow-border">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Leadership Award 👑</h3>
+                    <p>Student Council President</p>
+                    <span class="achievement-year">2022-2023</span>
+                </div>
+                <div class="achievement-card glow-border">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Hackathon Winner 🚀</h3>
+                    <p>National Data Science Challenge</p>
+                    <span class="achievement-year">2024</span>
+                </div>
+                <div class="achievement-card glow-border">
+                    <div class="achievement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Merit Scholarship 🎓</h3>
+                    <p>Academic Excellence - ₹2,00,000</p>
+                    <span class="achievement-year">2023-2024</span>
+                </div>
+                <div class="achievement-card glow-border">
+                    <div class="achievement-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Science Certification 📊</h3>
+                    <p>Google Data Analytics Professional</p>
+                    <span class="achievement-year">2024</span>
+                </div>
+                <div class="achievement-card glow-border">
+                    <div class="achievement-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Research Paper 🧠</h3>
+                    <p>Published in IEEE Conference</p>
+                    <span class="achievement-year">2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="Predictive Analytics Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Predictive Analytics Dashboard</h3>
+                        <p>Built a comprehensive dashboard for sales forecasting using Python, Pandas, and Plotly. Implemented machine learning models with 95% accuracy.</p>
+                        <div class="project-tech">
+                            <span>🐍 Python</span>
+                            <span>📊 Pandas</span>
+                            <span>🤖 Scikit-learn</span>
+                            <span>📈 Plotly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="E-commerce Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>Developed a full-stack e-commerce solution with React.js frontend and Node.js backend. Integrated payment gateway and inventory management.</p>
+                        <div class="project-tech">
+                            <span>⚛️ React.js</span>
+                            <span>🟢 Node.js</span>
+                            <span>🍃 MongoDB</span>
+                            <span>💳 Stripe API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project3.jpg" alt="Customer Segmentation">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Customer Segmentation Analysis</h3>
+                        <p>Implemented K-means clustering to segment customers based on purchasing behavior. Created actionable insights for marketing strategies.</p>
+                        <div class="project-tech">
+                            <span>🐍 Python</span>
+                            <span>🎯 K-means</span>
+                            <span>🌊 Seaborn</span>
+                            <span>📔 Jupyter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project4.jpg" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Client Portfolio Websites</h3>
+                        <p>Designed and developed multiple portfolio websites for clients. Focus on responsive design, performance optimization, and SEO.</p>
+                        <div class="project-tech">
+                            <span>🌐 HTML/CSS</span>
+                            <span>⚡ JavaScript</span>
+                            <span>🎨 SASS</span>
+                            <span>📦 Webpack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates & Achievements</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="assets/certificates/cert1.jpg" alt="Python for Data Science">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Python for Data Science</h3>
+                        <p>IBM Data Science Professional Certificate</p>
+                        <span class="certificate-date">2024</span>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="assets/certificates/cert2.jpg" alt="Machine Learning">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Machine Learning Specialization</h3>
+                        <p>Stanford University - Coursera</p>
+                        <span class="certificate-date">2024</span>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="assets/certificates/cert3.jpg" alt="Web Development">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Full Stack Web Development</h3>
+                        <p>The Odin Project Certification</p>
+                        <span class="certificate-date">2023</span>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="assets/certificates/cert4.jpg" alt="Data Visualization">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Data Visualization</h3>
+                        <p>Tableau Desktop Specialist</p>
+                        <span class="certificate-date">2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>
+                        I'm always interested in new opportunities and exciting projects. 
+                        Whether you need data analysis, machine learning solutions, or web development services,
+                        let's discuss how we can collaborate.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>abishake@email.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Your City, Country</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Abishake. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
