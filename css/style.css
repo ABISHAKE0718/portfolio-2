@@ -2183,6 +2183,19 @@ body::before {
     }
 }
 
+/* Responsive Matrix Rain for Mobile Devices */
+@media (max-width: 768px) {
+    .matrix-column {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .matrix-column {
+        font-size: 10px;
+    }
+}
+
 /* Holographic Card Effect */
 .holographic-card {
     background: linear-gradient(135deg, 

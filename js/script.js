@@ -777,7 +777,21 @@ function initMatrixRain() {
     
     const characters = '0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101';
     
-    for (let i = 0; i < 20; i++) {
+    // Responsive column count based on screen width
+    const screenWidth = window.innerWidth;
+    let columnCount;
+    
+    if (screenWidth <= 480) {
+        columnCount = 8; // Mobile phones
+    } else if (screenWidth <= 768) {
+        columnCount = 12; // Tablets
+    } else if (screenWidth <= 1024) {
+        columnCount = 16; // Small laptops
+    } else {
+        columnCount = 20; // Large screens
+    }
+    
+    for (let i = 0; i < columnCount; i++) {
         setTimeout(() => {
             createMatrixColumn();
         }, i * 200);
@@ -859,10 +873,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize floating emojis
     initFloatingEmojis();
     
-    // Initialize matrix rain effect
-    if (window.innerWidth > 768) {
-        initMatrixRain();
-    }
+    // Initialize matrix rain effect for all devices
+    initMatrixRain();
     
     // Initialize holographic cards
     initHolographicCards();
