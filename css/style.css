@@ -132,6 +132,8 @@ body::before {
     align-items: center;
     opacity: 0;
     transition: all 1s ease;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .loading-stage.active {
@@ -141,6 +143,9 @@ body::before {
 /* Stage 1: Glitching Text */
 .glitch-container {
     text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
 }
 
 .glitch-text {
@@ -213,6 +218,11 @@ body::before {
 /* Stage 2: Wireframe Triangle */
 .wireframe-container {
     position: relative;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wireframe-hexagon {
@@ -302,6 +312,12 @@ body::before {
 .prism-container {
     perspective: 1000px;
     position: relative;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .prism {
@@ -441,6 +457,10 @@ body::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .portfolio-title {
@@ -1687,6 +1707,32 @@ body::before {
 }
 
 /* Responsive Design */
+/* Loading Screen Responsive Styles */
+@media (max-width: 1024px) {
+    .wireframe-hexagon {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .prism {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .face {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .portfolio-title {
+        font-size: 3.5rem;
+    }
+    
+    .futuristic-progress {
+        width: 280px;
+    }
+}
+
 /* Tablet Landscape and Large Tablets */
 @media (max-width: 1024px) {
     .container {
@@ -1743,6 +1789,44 @@ body::before {
 
     .hamburger {
         display: flex;
+    }
+
+    /* Loading Screen Tablet Styles */
+    .glitch-text {
+        font-size: 2rem;
+    }
+    
+    .glitch-text-2 {
+        font-size: 1.5rem;
+    }
+    
+    .wireframe-hexagon {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .prism {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .face {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .portfolio-title {
+        font-size: 3rem;
+    }
+    
+    .subtitle-reveal {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+    
+    .futuristic-progress {
+        width: 250px;
+        bottom: 40px;
     }
 
     .hero-content {
@@ -1803,6 +1887,72 @@ body::before {
         padding: 0 10px;
     }
     
+    /* Loading Screen Mobile Styles */
+    .glitch-text {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .glitch-text-2 {
+        font-size: 1.3rem;
+    }
+    
+    .wireframe-hexagon {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .prism {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .face {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .final-prism {
+        width: 100px;
+        height: 100px;
+        top: 25%;
+    }
+    
+    .portfolio-title {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .subtitle-reveal {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
+    .loading-complete {
+        margin-top: 30px;
+    }
+    
+    .complete-text {
+        font-size: 1rem;
+    }
+    
+    .access-granted {
+        font-size: 0.9rem;
+    }
+    
+    .futuristic-progress {
+        width: 200px;
+        bottom: 30px;
+    }
+    
+    .progress-container {
+        padding: 12px;
+    }
+    
+    .progress-text {
+        font-size: 0.8rem;
+    }
+    
     .hero-title {
         font-size: 2rem;
         line-height: 1.2;
@@ -1860,6 +2010,77 @@ body::before {
 
 /* Extra Small Mobile Devices */
 @media (max-width: 360px) {
+    /* Loading Screen Extra Small Mobile Styles */
+    .glitch-text {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .glitch-text-2 {
+        font-size: 1.1rem;
+    }
+    
+    .wireframe-hexagon {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .prism {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .face {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .final-prism {
+        width: 80px;
+        height: 80px;
+        top: 30%;
+    }
+    
+    .portfolio-title {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .subtitle-reveal {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .loading-complete {
+        margin-top: 20px;
+    }
+    
+    .complete-text {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+    
+    .access-granted {
+        font-size: 0.8rem;
+    }
+    
+    .futuristic-progress {
+        width: 180px;
+        bottom: 20px;
+    }
+    
+    .progress-container {
+        padding: 10px;
+    }
+    
+    .progress-text {
+        font-size: 0.75rem;
+    }
+    
+    .ray {
+        height: 200px;
+    }
+
     .hero-title {
         font-size: 1.8rem;
     }
