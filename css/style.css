@@ -1687,6 +1687,38 @@ body::before {
 }
 
 /* Responsive Design */
+/* Tablet Landscape and Large Tablets */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+        padding: 0 15px;
+    }
+    
+    .hero-content {
+        gap: 40px;
+    }
+    
+    .about-content {
+        gap: 40px;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+    }
+    
+    .certificates-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+}
+
+/* Tablet Portrait and Small Tablets */
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -1767,21 +1799,29 @@ body::before {
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
     .hero-title {
         font-size: 2rem;
+        line-height: 1.2;
     }
 
     .hero-subtitle {
         font-size: 1.2rem;
+        line-height: 1.4;
     }
 
     .section-title {
         font-size: 1.8rem;
+        margin-bottom: 30px;
     }
 
     .btn {
         padding: 12px 25px;
         font-size: 0.9rem;
+        margin: 5px;
     }
 
     .contact-form {
@@ -1797,6 +1837,59 @@ body::before {
     .projects-grid,
     .certificates-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .achievement-card,
+    .project-card,
+    .certificate-card {
+        padding: 25px 20px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .image-container {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .achievement-card,
+    .project-card,
+    .certificate-card {
+        padding: 20px 15px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+    
+    .image-container {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .contact-form {
+        padding: 20px;
     }
 }
 
