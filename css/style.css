@@ -1014,7 +1014,7 @@ body::before {
 
 /* About Section */
 .about {
-    padding: 100px 0;
+    padding: 70px 0;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
 }
@@ -1080,7 +1080,7 @@ body::before {
 
 /* Experience Section */
 .experience {
-    padding: 100px 0;
+    padding: 70px 0;
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     position: relative;
@@ -1186,7 +1186,7 @@ body::before {
 
 /* Skills Section */
 .skills {
-    padding: 100px 0;
+    padding: 70px 0;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
 }
@@ -1274,15 +1274,15 @@ body::before {
 
 /* Achievements Section */
 .achievements {
-    padding: 100px 0;
+    padding: 70px 0;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
 }
 
 .achievements-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .achievement-card {
@@ -1353,15 +1353,15 @@ body::before {
 
 /* Projects Section */
 .projects {
-    padding: 100px 0;
+    padding: 60px 0;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
 }
 
 .project-card {
@@ -1370,7 +1370,7 @@ body::before {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: var(--shadow-light);
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     border: 1px solid rgba(0, 255, 255, 0.2);
 }
 
@@ -1383,7 +1383,7 @@ body::before {
 
 .project-image {
     position: relative;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -1391,7 +1391,7 @@ body::before {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
 .project-card:hover .project-image img {
@@ -1441,20 +1441,21 @@ body::before {
 }
 
 .project-content {
-    padding: 30px;
+    padding: 25px;
 }
 
 .project-content h3 {
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--text-dark);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .project-content p {
     color: var(--text-light);
-    margin-bottom: 20px;
-    line-height: 1.6;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 0.95rem;
 }
 
 .project-tech {
@@ -1474,15 +1475,15 @@ body::before {
 
 /* Certificates Section */
 .certificates {
-    padding: 100px 0;
+    padding: 70px 0;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
 }
 
 .certificates-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .certificate-card {
@@ -1548,7 +1549,7 @@ body::before {
 
 /* Contact Section */
 .contact {
-    padding: 100px 0;
+    padding: 70px 0;
     background: var(--gradient-1);
     color: var(--white);
 }

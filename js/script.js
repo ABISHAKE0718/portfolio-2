@@ -15,10 +15,10 @@ window.addEventListener('load', () => {
 
 function initializeFuturisticLoading() {
     const stages = [
-        { id: 'stage-1', duration: 3000 },
-        { id: 'stage-2', duration: 4000 },
-        { id: 'stage-3', duration: 3500 },
-        { id: 'stage-4', duration: 3000 }
+        { id: 'stage-1', duration: 1500 },
+        { id: 'stage-2', duration: 2000 },
+        { id: 'stage-3', duration: 1800 },
+        { id: 'stage-4', duration: 1700 }
     ];
     
     let currentStage = 0;
