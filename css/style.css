@@ -1353,7 +1353,7 @@ body::before {
 
 /* Projects Section */
 .projects {
-    padding: 60px 0;
+    padding: 60px 0 40px 0;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
 }
@@ -1475,7 +1475,7 @@ body::before {
 
 /* Certificates Section */
 .certificates {
-    padding: 70px 0;
+    padding: 40px 0 70px 0;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
 }
@@ -1968,6 +1968,15 @@ body::before {
         font-size: 1.8rem;
         margin-bottom: 30px;
     }
+    
+    /* Adjust section spacing for mobile */
+    .projects {
+        padding: 40px 0 30px 0;
+    }
+    
+    .certificates {
+        padding: 30px 0 50px 0;
+    }
 
     .btn {
         padding: 12px 25px;
@@ -2092,6 +2101,15 @@ body::before {
     
     .section-title {
         font-size: 1.6rem;
+    }
+    
+    /* Further reduce section spacing for very small screens */
+    .projects {
+        padding: 30px 0 25px 0;
+    }
+    
+    .certificates {
+        padding: 25px 0 40px 0;
     }
     
     .achievement-card,
